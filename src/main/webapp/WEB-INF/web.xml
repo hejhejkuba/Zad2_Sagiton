@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-class>HelloWorldServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <url-pattern>/hello.world</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>HelloWorldFilter</filter-name>
+    <filter-class>HelloWorldFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HelloWorldFilter</filter-name>
+    <url-pattern>/hello.world</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>FooWorldServlet</servlet-name>
+    <servlet-class>FooWorldServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FooWorldServlet</servlet-name>
+    <url-pattern>/foo.world</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>FooWorldFilter</filter-name>
+    <filter-class>FooWorldFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FooWorldFilter</filter-name>
+    <url-pattern>/foo.world</url-pattern>
+  </filter-mapping>
+
+</web-app>
